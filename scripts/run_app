@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker run -itd --name war-lidor -p 80:80 lidorlg/app-java:latest
+docker run -itd --name war-lidor -p 80:80 lidorlg/app-java:latest
