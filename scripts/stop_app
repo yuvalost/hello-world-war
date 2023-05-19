@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo docker stop war-lidor
-sudo docker rm war-lidor
+docker stop war-lidor
+docker rm war-lidor
