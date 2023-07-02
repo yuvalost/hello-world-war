@@ -32,12 +32,8 @@
 		</plugins>
 	</build>
 	<distributionManagement>
-    		<repository>
-        		<id>central</id>
-       			<name>a0guliumrcqcy-artifactory-primary-0-releases</name>
-        		<url>https://jfrogdemolidor.jfrog.io/artifactory/default-libs-release</url>
-    		</repository>
-		<distributionManagement>
+    
+		
    	       <repository>
         		<id>releases</id>
 		        <name>a0guliumrcqcy-artifactory-primary-0-releases</name>
@@ -46,6 +42,7 @@
    	       <snapshotRepository>
         		<id>snapshots</id>
         		<url>https://jfrogdemolidor.jfrog.io/artifactory/default-libs-snapshot</url>
+		</snapshotRepository>
 	</distributionManagement>
 	
 </project>
