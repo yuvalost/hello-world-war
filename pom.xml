@@ -31,5 +31,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+    		<repository>
+        		<id>central</id>
+        		<name>a0guliumrcqcy-artifactory-primary-0-releases</name>
+        		<url>https://jfrogdemolidor.jfrog.io/artifactory/default-libs-release</url>
+   	        </repository>
+	</distributionManagement>
 	
 </project>
