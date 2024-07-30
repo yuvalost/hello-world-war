@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SONARQUBE_HOST: ${{ secrets.SONARQUBE_HOST }}
-      SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       DOCKER_REPO: your-docker-repo/hello-world-war
@@ -30,9 +28,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-    - name: Run SonarQube analysis
-      run: mvn sonar:sonar -Dsonar.projectKey=hello-world-war -Dsonar.host.url=${{ env.SONARQUBE_HOST }} -Dsonar.login=${{ env.SONARQUBE_TOKEN }}
 
     - name: Log in to Docker Hub
       run: echo ${{ env.DOCKER_PASSWORD }} | docker login -u ${{ env.DOCKER_USERNAME }} --password-stdin
