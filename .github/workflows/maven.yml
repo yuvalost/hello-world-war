@@ -49,3 +49,4 @@ jobs:
         docker tag my-app:${{ github.run_id }} my-app:latest
         docker push my-app:${{ github.run_id }}
         docker push my-app:latest
+
