@@ -27,7 +27,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Run SonarQube Analysis
+    - name: SonarQube Scan
       uses: sonarsource/sonarcloud-github-action@v2
       with:
         args: >
@@ -49,4 +49,3 @@ jobs:
         docker tag my-app:${{ github.run_id }} my-app:latest
         docker push my-app:${{ github.run_id }}
         docker push my-app:latest
-
