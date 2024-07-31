@@ -38,7 +38,7 @@ jobs:
 
     - name: Tag latest & push
       run: |
-        docker tag yuvalost/hello_world_war1:${{ github.run_number }} yuvalost/dockerworkshop:latest
+        docker tag yuvalost/hello_world_war1:${{ github.run_number }} yuvalost/hello_world_war1:latest
         docker push yuvalost/hello_world_war1:latest
 
     - name: SonarCloud Analysis
